@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MarkusProfilePageComponent } from './pages/markus-profile-page/markus-profile-page.component';
+import { FourOFourPageComponent } from './pages/four-ofour-page/four-ofour-page.component';
+import { AndreasProfilePageComponent } from './pages/andreas-profile-page/andreas-profile-page.component';
+import { KristianProfilePageComponent } from './pages/kristian-profile-page/kristian-profile-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarkusProfilePageComponent,
+    FourOFourPageComponent,
+    AndreasProfilePageComponent,
+    KristianProfilePageComponent
   ],
   imports: [
     BrowserModule,
