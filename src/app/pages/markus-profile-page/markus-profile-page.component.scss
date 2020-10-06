@@ -1,0 +1,57 @@
+.page {
+  background-image: linear-gradient(to right, #c2c2c2, #9b9b9b);
+  height: fit-content;
+  min-height: 100%;
+}
+
+.profile-pic {
+  position: relative;
+  padding-top: 5%;
+
+  img {
+    display: block;
+    max-width: 50%;
+    max-height: 60vh;
+    margin: auto;
+    border-radius: 1em;
+    box-shadow: 0px 8px 10px 10px #9b9b9b;
+  }
+}
+
+.info-box {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  max-width: 60em;
+  margin: auto;
+  margin-top: -2em;
+  border-radius: 1em;
+  color: #ebf0f2;
+  background-color: #232730;
+}
+
+.name {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.description {
+  margin: 0 1em;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row;
+  justify-content: center;
+  padding: 1em 0;
+
+  .link-item {
+    padding: 0 0.5em;
+  }
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
