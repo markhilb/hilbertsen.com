@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MarkusProfilePageComponent } from './pages/markus-profile-page/markus-profile-page.component';
 import { AndreasProfilePageComponent } from './pages/andreas-profile-page/andreas-profile-page.component';
 import { KristianProfilePageComponent } from './pages/kristian-profile-page/kristian-profile-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { KristianProfilePageComponent } from './pages/kristian-profile-page/kris
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
