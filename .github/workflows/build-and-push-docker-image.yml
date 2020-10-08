@@ -3,7 +3,7 @@ name: Build and push docker image
 on:
   push:
     branches:
-      - development
+      - master
 
 jobs:
   build:
@@ -26,6 +26,3 @@ jobs:
         with:
           push: true
           tags: markhilb/hilbertsen.com:latest
-
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
