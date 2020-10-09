@@ -1,5 +1,5 @@
 .page {
-  background-image: url("../../../assets/backgrounds/hockey.jpg");
+  background-image: url('/assets/hockey.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: fit-content;
@@ -20,7 +20,7 @@
 }
 
 .info-box {
-  background-image: url("../../../assets/cards/andreas-card.jpg");
+  background-image: url('/assets/andreas-card.jpg');
   background-size: 100% 100%;
   // background-size: contain;
   background-repeat: no-repeat;
