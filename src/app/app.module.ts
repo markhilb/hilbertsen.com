@@ -7,13 +7,15 @@ import { MarkusProfilePageComponent } from './pages/markus-profile-page/markus-p
 import { AndreasProfilePageComponent } from './pages/andreas-profile-page/andreas-profile-page.component';
 import { KristianProfilePageComponent } from './pages/kristian-profile-page/kristian-profile-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarkusProfilePageComponent,
     AndreasProfilePageComponent,
-    KristianProfilePageComponent
+    KristianProfilePageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

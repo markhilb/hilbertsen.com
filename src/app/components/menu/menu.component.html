@@ -1,0 +1,17 @@
+<div id="hamburger" (click)="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div *ngIf="open" class="overlay"></div>
+<div *ngIf="open" id="menu">
+  <div class="section">
+    <h2 class="header">People</h2>
+    <ul>
+      <li><a href="/">Markus</a></li>
+      <li>Andreas</li>
+      <li>Kristian</li>
+    </ul>
+  </div>
+</div>
