@@ -1,1 +1,40 @@
-<p>kristian-profile-page works!</p>
+<div class="page">
+  <div class="profile-pic">
+    <img src="/assets/kristian.jpg" />
+  </div>
+  <div class="info-box">
+    <h2 class="name">Kristian Bergum Hilbertsen</h2>
+    <div class="description">
+      <p>Greetings!</p>
+      <p>
+        I am currently persuing my Masters degree in Mathematics at The Arctic
+        University of Norway. I also play hockey for the Tromsø Hockey team.
+      </p>
+      <div style="display: flex; flex-direction: row">
+        <p style="padding-right: 1em">My favourite equation is:</p>
+        <!-- prettier-ignore -->
+        <table>
+        <tr>
+          <td style="border-bottom: 1px solid white; text-align: center">ma</td>
+          <td rowspan="2">= k<sup>U</sup>l</td>
+        </tr>
+        <tr>
+          <td>rk<sup>U</sup>s
+          </td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <div class="links">
+      <a class="link-item" href="https://facebook.com/kristianbergum.hilbertsen">
+        <fa-icon [icon]="faFacebook" size="2x"></fa-icon>
+      </a>
+      <a class="link-item" href="https://instagram.com/kristianhilbertsen/">
+        <fa-icon [icon]="faInstagram" size="2x"></fa-icon>
+      </a>
+      <a class="link-item" href="mailto:">
+        <fa-icon [icon]="faEnvelope" size="2x"></fa-icon>
+      </a>
+    </div>
+  </div>
+</div>
