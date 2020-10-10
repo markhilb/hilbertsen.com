@@ -2,7 +2,8 @@
   background-image: url('/assets/hockey.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: fit-content;
+  height: fit-content;
+  min-height: 100%;
 }
 
 .profile-pic {
@@ -15,22 +16,19 @@
     max-height: 60vh;
     margin: auto;
     border-radius: 1em;
-    box-shadow: 0px 8px 10px 10px #9b9b9b;
+    box-shadow: 0px 8px 10px 10px #c4dcfe;
   }
 }
 
 .info-box {
-  background-image: url('/assets/andreas-card.jpg');
-  background-size: 100% 100%;
-  // background-size: contain;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to top right, #9a331f, #de6037);
   position: relative;
   z-index: 2;
+  width: 80%;
+  max-width: 60em;
   margin: auto;
   margin-top: -2em;
-  // width: 40em;
-  // height: 20em;
-  max-width: 60em;
+  border-radius: 1em;
   color: #ebf0f2;
 }
 
@@ -39,8 +37,12 @@
   text-align: center;
 }
 
+.number {
+  text-align: center;
+}
+
 .description {
-  margin-left: 25%;
+  margin: auto 1em;
 }
 
 .links {
