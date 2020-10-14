@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html,
 body {
   height: 100%;
@@ -9,6 +11,7 @@ body {
   --dark-background: #232730;
 
   color: var(--primary);
+  font-family: 'Roboto', sans-serif;
 }
 
 .page {
