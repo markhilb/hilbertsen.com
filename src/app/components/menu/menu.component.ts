@@ -17,6 +17,7 @@ export class MenuComponent implements OnInit {
 
   navigate(url: string) {
     this.open = false;
+    document.getElementById('hamburger').classList.remove('white-hamburger');
     this.router.navigateByUrl(url);
   }
 }

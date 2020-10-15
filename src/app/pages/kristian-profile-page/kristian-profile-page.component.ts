@@ -14,5 +14,7 @@ export class KristianProfilePageComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    document.getElementById('hamburger').classList.add('white-hamburger');
+  }
 }
