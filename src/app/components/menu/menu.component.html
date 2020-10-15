@@ -1,17 +1,14 @@
-<div id="hamburger" (click)="toggleMenu()">
-  <div></div>
-  <div></div>
-  <div></div>
+<div id="hamburger" [class.not-open]="!open"(click)="toggleMenu()">
+  <div [class.open]="open"></div>
+  <div [class.open]="open"></div>
+  <div [class.open]="open"></div>
 </div>
 
 <div class="overlay" [class.open]="open" (click)="toggleMenu()"></div>
 <div id="menu" [class.open]="open">
-  <div class="section">
-    <h2 class="header">People</h2>
-    <ul>
-      <li><a (click)="navigate('/')">Markus</a></li>
-      <li><a (click)="navigate('/andreas')">Andreas</a></li>
-      <li><a (click)="navigate('/kristian')">Kristian</a></li>
-    </ul>
-  </div>
+  <ul class="list">
+    <li><h2 (click)="navigate('/')">Markus</h2></li>
+    <li><h2 (click)="navigate('/andreas')">Andreas</h2></li>
+    <li><h2 (click)="navigate('/kristian')">Kristian</h2></li>
+  </ul>
 </div>
