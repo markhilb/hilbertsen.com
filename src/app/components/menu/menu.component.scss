@@ -17,7 +17,7 @@
 }
 
 .white-hamburger {
-  &.not-open{
+  &.not-open {
     background-color: var(--primary);
     border-radius: 0 0 8px 0;
   }
@@ -67,11 +67,6 @@
 
   li {
     margin-bottom: 1.5em;
+    cursor: pointer;
   }
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
 }
