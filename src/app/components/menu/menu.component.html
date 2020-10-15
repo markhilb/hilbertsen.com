@@ -4,8 +4,8 @@
   <div></div>
 </div>
 
-<div *ngIf="open" class="overlay"></div>
-<div *ngIf="open" id="menu">
+<div class="overlay" [class.open]="open" (click)="toggleMenu()"></div>
+<div id="menu" [class.open]="open">
   <div class="section">
     <h2 class="header">People</h2>
     <ul>
