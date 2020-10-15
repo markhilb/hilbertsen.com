@@ -5,10 +5,26 @@ import { AndreasProfilePageComponent } from './pages/andreas-profile-page/andrea
 import { KristianProfilePageComponent } from './pages/kristian-profile-page/kristian-profile-page.component';
 
 const routes: Routes = [
-  { path: '', component: MarkusProfilePageComponent },
-  { path: 'markus', component: MarkusProfilePageComponent },
-  { path: 'andreas', component: AndreasProfilePageComponent },
-  { path: 'kristian', component: KristianProfilePageComponent },
+  {
+    path: '',
+    component: MarkusProfilePageComponent,
+    data: { animation: 'markus' },
+  },
+  {
+    path: 'markus',
+    component: MarkusProfilePageComponent,
+    data: { animation: 'markus' },
+  },
+  {
+    path: 'andreas',
+    component: AndreasProfilePageComponent,
+    data: { animation: 'andreas' },
+  },
+  {
+    path: 'kristian',
+    component: KristianProfilePageComponent,
+    data: { animation: 'kristian' },
+  },
 
   // Must be at the bottom
   { path: '**', redirectTo: '' },
