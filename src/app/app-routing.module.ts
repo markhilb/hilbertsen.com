@@ -15,16 +15,16 @@ const routes: Routes = [
     component: MarkusProfilePageComponent,
     data: { animation: 'markus' },
   },
-  {
-    path: 'andreas',
-    component: AndreasProfilePageComponent,
-    data: { animation: 'andreas' },
-  },
-  {
-    path: 'kristian',
-    component: KristianProfilePageComponent,
-    data: { animation: 'kristian' },
-  },
+  // {
+  //   path: 'andreas',
+  //   component: AndreasProfilePageComponent,
+  //   data: { animation: 'andreas' },
+  // },
+  // {
+  //   path: 'kristian',
+  //   component: KristianProfilePageComponent,
+  //   data: { animation: 'kristian' },
+  // },
 
   // Must be at the bottom
   { path: '**', redirectTo: '' },
