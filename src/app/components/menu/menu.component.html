@@ -1,4 +1,9 @@
-<button id="hamburger" [class.not-open]="!open" (click)="toggleMenu()">
+<button
+  id="hamburger"
+  [class.not-open]="!open"
+  [class.white-background]="whiteBg"
+  (click)="toggleMenu()"
+>
   <div [class.open]="open"></div>
   <div [class.open]="open"></div>
   <div [class.open]="open"></div>
