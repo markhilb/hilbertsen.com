@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { MenuService } from '../../services/menu.service';
 
 @Component({
   selector: 'app-kristian-profile-page',
@@ -12,9 +13,9 @@ export class KristianProfilePageComponent implements OnInit {
   faFacebook = faFacebook;
   faInstagram = faInstagram;
 
-  constructor() {}
+  constructor(private menuService: MenuService) {}
 
   ngOnInit(): void {
-    document.getElementById('hamburger').classList.add('white-background');
+    this.menuService.addWhiteBackground();
   }
 }
