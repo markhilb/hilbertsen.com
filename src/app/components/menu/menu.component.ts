@@ -22,14 +22,12 @@ export class MenuComponent implements OnInit {
       .subscribe(() => (this.whiteBg = true));
 
     this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) this.whiteBg = false;
+      if (event instanceof NavigationEnd) {
+        this.open = false;
+        this.whiteBg = false;
+      }
     });
   }
 
   toggleMenu = () => (this.open = !this.open);
-
-  navigate(url: string) {
-    this.open = false;
-    this.router.navigateByUrl(url);
-  }
 }
