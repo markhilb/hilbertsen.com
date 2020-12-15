@@ -9,13 +9,26 @@ body {
 
   --primary: #ebf0f2;
   --dark-background: #232730;
+  --black: #1f1f1f;
 
   color: var(--primary);
+  background-color: var(--dark-background);
   font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
 }
 
 .page {
   display: block;
-  height: 100%;
   width: 100%;
+  height: fit-content;
+  min-height: calc(100vh - 40px);
+  padding-top: 40px;
 }

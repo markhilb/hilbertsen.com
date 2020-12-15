@@ -8,20 +8,9 @@
   div {
     width: 30px;
     height: 5px;
-    background-color: var(--dark-background);
+    background-color: var(--primary);
     border-radius: 5px;
     margin: 6px 6px;
-
-    &.open {
-      background-color: var(--primary);
-    }
-  }
-
-  &.white-background {
-    &.not-open {
-      background-color: var(--primary);
-      border-radius: 0 0 8px 0;
-    }
   }
 }
 
