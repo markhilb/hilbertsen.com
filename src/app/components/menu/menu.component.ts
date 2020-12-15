@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { MenuService } from '../../services/menu.service';
 
 @UntilDestroy()
 @Component({
@@ -11,21 +10,12 @@ import { MenuService } from '../../services/menu.service';
 })
 export class MenuComponent implements OnInit {
   open = false;
-  whiteBg = false;
 
-  constructor(private menuService: MenuService, private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.menuService
-      .getAddWhiteBackground()
-      .pipe(untilDestroyed(this))
-      .subscribe(() => (this.whiteBg = true));
-
     this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.open = false;
-        this.whiteBg = false;
-      }
+      if (event instanceof NavigationEnd) this.open = false;
     });
   }
 
