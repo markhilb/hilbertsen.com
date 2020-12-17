@@ -1,7 +1,8 @@
-<button id="hamburger" (click)="toggleMenu()">
-  <div [class.open]="open"></div>
-  <div [class.open]="open"></div>
-  <div [class.open]="open"></div>
+<button id="hamburger" [class.open]="open" (click)="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </button>
 
 <div class="overlay" [class.open]="open" (click)="toggleMenu()"></div>
