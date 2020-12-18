@@ -67,7 +67,7 @@
   bottom: 0;
   z-index: 4;
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 
   &.open {
     visibility: visible;
