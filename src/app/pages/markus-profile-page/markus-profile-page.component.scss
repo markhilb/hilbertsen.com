@@ -2,6 +2,10 @@
   position: relative;
   margin: auto 2rem;
 
+  @media screen and (min-width: 1024px) {
+      margin-top: 4rem;
+  }
+
   img {
     display: block;
     max-width: 100%;
