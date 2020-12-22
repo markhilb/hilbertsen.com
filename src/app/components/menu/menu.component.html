@@ -8,8 +8,8 @@
 <div class="overlay" [class.open]="open" (click)="toggleMenu()"></div>
 <div id="menu" [class.open]="open">
   <div class="items">
-    <a href="/"><h2>Markus</h2></a>
-    <a href="/andreas"><h2>Andreas</h2></a>
-    <a href="/kristian"><h2>Kristian</h2></a>
+    <button (click)="navigate('/')">Markus</button>
+    <button (click)="navigate('/andreas')">Andreas</button>
+    <button (click)="navigate('/kristian')">Kristian</button>
   </div>
 </div>

@@ -1,5 +1,8 @@
-#hamburger {
+button {
   all: unset;
+}
+
+#hamburger {
   position: fixed;
   top: 0;
   z-index: 10;
@@ -50,10 +53,12 @@
 .items {
   margin: 4rem auto auto 6rem;
 
-  a {
-    color: inherit;
-    text-decoration: none;
+  button {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
+    margin: 1.5rem 0;
   }
 }
 
