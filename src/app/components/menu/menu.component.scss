@@ -36,11 +36,12 @@ button {
 }
 
 #menu {
+  z-index: 5;
   position: fixed;
   top: 0;
-  bottom: 0;
   width: 360px;
-  z-index: 5;
+  height: 100%;
+  overflow-y: auto;
   background-color: var(--dark-background);
   transform: translateX(-100%);
   transition: transform 300ms ease-in-out;
@@ -48,17 +49,39 @@ button {
   &.open {
     transform: translateX(0);
   }
-}
 
-.items {
-  margin: 4rem auto auto 6rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3rem 0 0 6rem;
 
-  button {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1.5rem 0;
+    .pages {
+      button {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 1.5rem 0;
+      }
+    }
+
+    .applications {
+      margin-bottom: 4rem;
+
+      p {
+        color: #a3a7ab;
+        font-size: 14px;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
   }
 }
 

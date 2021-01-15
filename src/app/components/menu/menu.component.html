@@ -7,9 +7,15 @@
 
 <div class="overlay" [class.open]="open" (click)="toggleMenu()"></div>
 <div id="menu" [class.open]="open">
-  <div class="items">
-    <button (click)="navigate('/')">Markus</button>
-    <button (click)="navigate('/andreas')">Andreas</button>
-    <button (click)="navigate('/kristian')">Kristian</button>
+  <div class="container">
+    <div class="pages">
+      <button (click)="navigate('/')">Markus</button>
+      <button (click)="navigate('/andreas')">Andreas</button>
+      <button (click)="navigate('/kristian')">Kristian</button>
+    </div>
+    <div class="applications">
+      <p>Applications</p>
+      <a href="https://vindskjerming.hilbertsen.com">Vindskjerming</a>
+    </div>
   </div>
 </div>
