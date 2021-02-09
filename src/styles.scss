@@ -7,12 +7,21 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 
-  --primary: #ebf0f2;
-  --dark-background: #232730;
-  --black: #1f1f1f;
+  --foreground: #ffffff;
+  --background: #121212;
+  --background-4: #1b1b1b;
+  --background-5: #1e1e1e;
+  --background-6: #202020;
+  --background-8: #252525;
+  --background-12: #2e2e2e;
+  --background-16: #383838;
 
-  color: var(--primary);
-  background-color: var(--dark-background);
+  --high: 87%;
+  --medium: 60%;
+  --low: 38%;
+
+  color: var(--foreground);
+  background-color: var(--background);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -31,4 +40,12 @@ body {
   height: fit-content;
   min-height: calc(100vh - 40px);
   padding-top: 40px;
+}
+
+p,
+h1,
+h2,
+h3,
+.link-item {
+  opacity: var(--high);
 }
