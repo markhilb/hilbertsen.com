@@ -1,5 +1,8 @@
+a,
 button {
   all: unset;
+  opacity: var(--high);
+  cursor: pointer;
 }
 
 #hamburger {
@@ -11,7 +14,7 @@ button {
   div {
     width: 30px;
     height: 5px;
-    background-color: var(--primary);
+    background-color: var(--foreground);
     border-radius: 5px;
     margin: 6px 6px;
     transition: 300ms ease-in-out;
@@ -19,6 +22,7 @@ button {
 
   div:nth-child(3) {
     margin-top: -11px;
+    visibility: hidden;
   }
 
   &.open {
@@ -31,6 +35,7 @@ button {
     }
     div:nth-child(3) {
       transform: rotate(-45deg);
+      visibility: visible;
     }
   }
 }
@@ -42,7 +47,7 @@ button {
   width: 360px;
   height: 100%;
   overflow-y: auto;
-  background-color: var(--dark-background);
+  background-color: var(--background);
   transform: translateX(-100%);
   transition: transform 300ms ease-in-out;
 
@@ -63,7 +68,6 @@ button {
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
-        cursor: pointer;
         margin: 1.5rem 0;
       }
     }
@@ -72,13 +76,12 @@ button {
       margin-bottom: 4rem;
 
       p {
-        color: #a3a7ab;
+        opacity: var(--medium);
         font-size: 14px;
       }
 
       a {
         color: var(--primary);
-        text-decoration: none;
         font-size: 18px;
       }
     }

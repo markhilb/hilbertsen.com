@@ -16,14 +16,14 @@
 }
 
 .info-box {
-  background-color: var(--black);
   position: relative;
   z-index: 2;
   width: 90%;
   max-width: 50rem;
   margin: auto;
-  margin-top: -2em;
-  border-radius: 1em;
+  margin-top: -2rem;
+  border-radius: 1rem;
+  background-color: var(--background-5);
 }
 
 .name {
