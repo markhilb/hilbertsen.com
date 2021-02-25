@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { filter } from 'rxjs/operators';
 
 @UntilDestroy()
 @Component({
@@ -11,13 +12,16 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 export class MenuComponent implements OnInit {
   open = false;
 
-  constructor(private router: Router) {}
-
-  ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) this.open = false;
-    });
+  constructor(private router: Router) {
+    router.events
+      .pipe(
+        untilDestroyed(this),
+        filter((event) => event instanceof NavigationStart),
+      )
+      .subscribe(() => (this.open = false));
   }
+
+  ngOnInit(): void {}
 
   toggleMenu = () => (this.open = !this.open);
 
