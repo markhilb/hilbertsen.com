@@ -25,5 +25,5 @@ export class MenuComponent implements OnInit {
 
   toggleMenu = () => (this.open = !this.open);
 
-  navigate = (url) => this.router.navigateByUrl(url);
+  navigate = (url: string) => this.router.navigateByUrl(url);
 }
