@@ -1,3 +1,7 @@
 .git
+.github
 .gitignore
 node_modules
+.prettierrc
+README.md
+docker-compose.yml
