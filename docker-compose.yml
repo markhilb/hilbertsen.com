@@ -4,7 +4,7 @@ services:
     image: markhilb/hilbertsen.com:latest
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: .docker/Dockerfile
     ports:
       - "11000:80"
 
