@@ -18,6 +18,6 @@ Repository for my website [hilbertsen.com](https://www.hilbertsen.com)
 
 ### Pull and run docker image
 ````
-    $ docker run -p 11000:80 marhilb/hilbertsen.com
+    $ docker run -p 11000:80 markhilb/hilbertsen.com
 ````
 * Open browser to localhost:11000
