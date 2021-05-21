@@ -24,6 +24,4 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleMenu = () => (this.open = !this.open);
-
-  navigate = (url: string) => this.router.navigateByUrl(url);
 }
