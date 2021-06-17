@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { MarkusProfilePageComponent } from './pages/markus-profile-page/markus-profile-page.component';
-import { AndreasProfilePageComponent } from './pages/andreas-profile-page/andreas-profile-page.component';
-import { KristianProfilePageComponent } from './pages/kristian-profile-page/kristian-profile-page.component';
+import { RouterModule, Routes } from '@angular/router';
+import { MarkusPageComponent } from './pages/profile-pages/markus-page/markus-page.component';
+import { AndreasPageComponent } from './pages/profile-pages/andreas-page/andreas-page.component';
+import { KristianPageComponent } from './pages/profile-pages/kristian-page/kristian-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MarkusProfilePageComponent,
+    component: MarkusPageComponent,
     data: { animation: 'markus' },
   },
   {
     path: 'markus',
-    component: MarkusProfilePageComponent,
+    component: MarkusPageComponent,
     data: { animation: 'markus' },
   },
   {
     path: 'andreas',
-    component: AndreasProfilePageComponent,
+    component: AndreasPageComponent,
     data: { animation: 'andreas' },
   },
   {
     path: 'kristian',
-    component: KristianProfilePageComponent,
+    component: KristianPageComponent,
     data: { animation: 'kristian' },
   },
 

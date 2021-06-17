@@ -3,11 +3,11 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-kristian-profile-page',
-  templateUrl: './kristian-profile-page.component.html',
-  styleUrls: ['./kristian-profile-page.component.scss'],
+  selector: 'app-kristian-page',
+  templateUrl: './kristian-page.component.html',
+  styleUrls: ['./kristian-page.component.scss'],
 })
-export class KristianProfilePageComponent implements OnInit {
+export class KristianPageComponent implements OnInit {
   faEnvelope = faEnvelope;
   faFacebook = faFacebook;
   faInstagram = faInstagram;
