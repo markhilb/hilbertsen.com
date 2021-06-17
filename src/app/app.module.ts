@@ -1,28 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MarkusProfilePageComponent } from './pages/markus-profile-page/markus-profile-page.component';
-import { AndreasProfilePageComponent } from './pages/andreas-profile-page/andreas-profile-page.component';
-import { KristianProfilePageComponent } from './pages/kristian-profile-page/kristian-profile-page.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AndreasPageComponent } from './pages/profile-pages/andreas-page/andreas-page.component';
+import { KristianPageComponent } from './pages/profile-pages/kristian-page/kristian-page.component';
+import { MarkusPageComponent } from './pages/profile-pages/markus-page/markus-page.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MarkusProfilePageComponent,
-    AndreasProfilePageComponent,
-    KristianProfilePageComponent,
+    AndreasPageComponent,
+    KristianPageComponent,
+    MarkusPageComponent,
     MenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
