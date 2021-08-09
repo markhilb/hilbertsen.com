@@ -3,6 +3,7 @@ button {
   all: unset;
   opacity: var(--high);
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 #hamburger {
@@ -64,7 +65,7 @@ button {
     padding: 3rem 0 0 6rem;
 
     .pages {
-      button {
+      a {
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
