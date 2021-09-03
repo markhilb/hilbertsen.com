@@ -8,10 +8,14 @@
         "project": ["tsconfig.json"],
         "createDefaultProgram": true
       },
+      "plugins": ["@angular-eslint"],
       "extends": [
-        "plugin:@angular-eslint/recommended",
+        "eslint:recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
+      "env": {
+        "browser": true
+      },
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
