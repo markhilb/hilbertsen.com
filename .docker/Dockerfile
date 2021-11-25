@@ -1,9 +1,9 @@
-FROM node:latest AS builder
+FROM node:16 AS builder
 
 WORKDIR /app
 COPY . .
 RUN npm ci
-RUN npm run build --prod
+RUN npm run build
 
 FROM nginx:alpine
 COPY .docker/nginx.conf /etc/nginx/nginx.conf
