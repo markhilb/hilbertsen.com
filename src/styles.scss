@@ -8,9 +8,9 @@ body {
   scroll-behavior: smooth;
 
   --foreground: #ffffff;
-  --background: #121212;
-  --background-4: #1b1b1b;
-  --background-5: #1e1e1e;
+  --background: #1c1c1c;
+  --background-4: #202020;
+  --background-5: #2c2c2c;
   --background-6: #202020;
   --background-8: #252525;
   --background-12: #2e2e2e;
@@ -48,4 +48,13 @@ h2,
 h3,
 .link-item {
   opacity: var(--high);
+}
+
+a {
+  text-decoration: inherit;
+  color: lightblue;
+}
+
+fa-icon {
+  color: white;
 }
