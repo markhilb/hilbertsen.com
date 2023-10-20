@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: .docker/Dockerfile
     ports:
-      - "11000:80"
+      - '11000:80'
 
 networks:
   default:
