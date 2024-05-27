@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -8,7 +8,6 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./kristian-page.component.scss'],
 })
 export class KristianPageComponent implements OnInit {
-  faEnvelope = faEnvelope;
   faFacebook = faFacebook;
   faInstagram = faInstagram;
   faFileAlt = faFileAlt;
