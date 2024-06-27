@@ -5,10 +5,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { AndreasPageComponent } from './pages/profile-pages/andreas-page/andreas-page.component';
 import { KristianPageComponent } from './pages/profile-pages/kristian-page/kristian-page.component';
 import { MarkusPageComponent } from './pages/profile-pages/markus-page/markus-page.component';
-import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
